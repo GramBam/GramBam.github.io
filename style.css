@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 14px; }
+
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased; }
+
+
+a,
+button {
+  color: inherit; }
+
+a {
+  text-decoration: none; }
+
+button {
+  overflow: visible;
+  border: 0;
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  letter-spacing: inherit;
+  background: none;
+  cursor: pointer; }
+
+strong {
+  font-weight: bold; }
+
+*::selection {
+  background: rgba(194, 208, 118, 0.6); }
+
+html {
+  background-color: #161C26;
+  background: linear-gradient(to top, #eee, #161C26 10%, #161C26);
+  font-size: 18px; }
+  @media screen and (max-width: 1400px) {
+    html {
+      font-size: 16px; } }
+  @media screen and (max-width: 1000px) {
+    html {
+      font-size: 15px; } }
+  @media screen and (max-width: 500px) {
+    html {
+      font-size: 13px; } }
+
+body {
+  overflow-x: hidden; }
+
+h1, h2 {
+  font: 2.5rem "Julius Sans One";
+  color: #222;
+  text-transform: lowercase;
+  margin-bottom: 3rem; }
+  @media screen and (max-width: 350px) {
+    h1, h2 {
+      font-size: 2.2rem; } }
+
+h1 {
+  padding: 1rem 0 0 1rem; }
+
+p {
+  font: 1.3rem "Quicksand";
+  line-height: 1.5; }
+
+footer {
+  background-color: #161C26;
+  height: 50px; }
+  footer p {
+    font: 0.8rem "Nixie One";
+    color: #eee;
+    text-align: center;
+    line-height: 50px; }
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+navbar {
+  position: relative;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  margin: 20vh auto 0; }
+  @media screen and (min-width: 851px) {
+    html:not(.is-touch) navbar:before, html:not(.is-touch) navbar:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      border-bottom: 1px solid #222;
+      transform: scaleX(0);
+      transition: transform 0.5s;
+      will-change: transform; }
+    html:not(.is-touch) navbar:before {
+      top: 0;
+      transform-origin: 105% 0%; }
+    html:not(.is-touch) navbar:after {
+      bottom: 0;
+      transform-origin: -5% 0%; }
+    html:not(.is-touch) navbar:hover:before, html:not(.is-touch) navbar:hover:after {
+      transform: scaleX(1); } }
+  @media screen and (max-width: 850px) {
+    navbar {
+      border-top: 1px solid #222;
+      border-bottom: 1px solid #222; } }
+  @media screen and (max-width: 500px) {
+    navbar {
+      flex-direction: column;
+      border: 1px solid #222;
+      margin-top: 5vh;
+      background: rgba(238, 238, 238, 0.55); } }
+  navbar h3 {
+    height: 0;
+    text-indent: -10000px; }
+  navbar a {
+    padding: 1rem;
+    margin: 1.2rem 1rem;
+    font: 1.6rem "Nixie One";
+    text-transform: lowercase;
+    color: #222;
+    border: 1px solid transparent;
+    transition: .1s;
+    text-shadow: 0px 0px 6px rgba(214, 214, 214, 0.5), 0px 0px 1px rgba(0, 0, 0, 0.5); }
+    @media screen and (min-width: 851px) {
+      html:not(.is-touch) navbar a:hover {
+        border-left: 1px solid #222;
+        border-right: 1px solid #222; } }
+    @media screen and (max-width: 500px) {
+      navbar a {
+        margin: 0 1rem;
+        padding: 2rem 1.5rem;
+        text-align: center;
+        border-bottom: 1px solid #222; }
+        navbar a:last-of-type {
+          border-bottom: none; } }
+
+#sect {
+  height: 170vh;
+  width: 100vw;
+  background: url("images/background2.jpg") 70% 0%/cover no-repeat;
+}
+
+
+#about {
+  display: flex;
+  position: relative;
+  margin-top: -70vh; }
+  @media screen and (max-width: 950px) {
+    #about {
+      flex-direction: column; } }
+
+.about-text {
+  flex: 13;
+  background-color: #eee;
+  padding: 2rem; }
+  .about-text p {
+    color: #222;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto 2rem; }
+    .about-text p:last-of-type {
+      margin-bottom: 1rem; }
+  @media screen and (max-width: 950px) {
+    .about-text {
+      flex: 0;
+      padding-bottom: 4rem; } }
+
+.tools {
+  flex: 8;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem; }
+  .tools p {
+    color: #222;
+    text-align: center;
+     }
+  @media screen and (max-width: 950px) {
+    .tools {
+      flex: 0;
+      background: #161C26;
+      border-bottom: 2px solid rgba(238, 238, 238, 0.6);
+      padding: 2rem; } }
+  @media screen and (max-width: 500px) {
+    .tools {
+      padding: 1rem; } }
+
+.icon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden; }
+  @media screen and (min-width: 1201px) {
+    .icon-grid {
+      padding: 2rem 10%; } }
+  @media screen and (max-width: 950px) {
+    .icon-grid {
+      padding: 2rem 24%; } }
+  @media screen and (max-width: 800px) {
+    .icon-grid {
+      padding: 2rem 15%; } }
+  @media screen and (max-width: 500px) {
+    .icon-grid {
+      padding: 1rem 5%;
+      margin-bottom: 2rem; } }
+
+.box-outer {
+  position: relative;
+  width: 33.33333%; }
+
+.box-outer:before {
+  content: "";
+  display: block;
+  padding-top: 100%; }
+
+.box-inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  .box-inner img {
+    width: 60%;
+    height: 60%;
+    margin: 20%; }
+  .box-inner h6 {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: -50%;
+    width: 200%;
+    font: 1.3rem "Quicksand";
+    text-align: center;
+    color: rgba(238, 238, 238, 0.7); }
