@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="shortcut icon" href="images/favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Nixie+One|Quicksand:300" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 	<title>Graham Moss. Web Developer</title>
@@ -12,6 +12,10 @@
 
 <header>
 	<h1>Graham Moss. Web Developer</h1>
+	<div class="icons">
+		<a href="https://github.com/GramBam"> <img src ="images/github.png" alt="Github"></a>
+		<a href="https://www.linkedin.com/in/graham-moss/"> <img src ="images/linkedin.png" alt="LinkedIn"></a>
+	</div>
 	<navbar>
 		<a href="#about" class="navbar-link">About Me</a>
 		<a href="#projects" class="nav-link">Projects</a>
@@ -25,7 +29,7 @@
 	<section id="about">
 		<div class="about-text">
 			<h2>About</h2>
-			<p>I'm a fire academy graduate looking to branch out into the world of web development. My time training to become a firefighter taught me many valuable skills (leadership, teamwork, working under pressure) which I will carry over into a development environment. My 9 weeks at Bitmaker expanded those skills and taught me a whole new array of technical skills which I am eager to apply.</p>
+			<p>I'm a fire academy graduate branching out into the world of web development. My time training to become a firefighter taught me many valuable skills (leadership, teamwork, working under pressure) which I will carry over into a development environment. My 9 weeks at Bitmaker expanded those skills and taught me a whole new array of technical skills which I am eager to apply.</p>
 
 			<p>I am primarily working with Ruby on Rails, Javascript & jQuery, WordPress, HTML & CSS, but I strive to learn more every day to expand my toolbox.</p>
 		</div>
@@ -91,14 +95,35 @@
 	</section>
 
 	<section id="projects">
-		<h2>My Projects</h2>
+		<h2>My Selected Projects</h2>
+
+		<div class="project-pane">
+			<div class="project-image wealthtable">
+				<a href="https://github.com/GramBam/Epileptic-Brickbreaker/blob/master/brickbreak.html" target="_blank" class="link-button github-link">View the Live Site</a>
+			</div>
+			<div class="project-text">
+				<h4>WealthTable</h4>
+				<p>My biggest project, built on rails. WealthTable is a financial organization web application.</p>
+			</div>
+		</div>
+
+		<div class="project-pane">
+			<div class="project-image jsquiz">
+				<a href="https://github.com/GramBam/jsquiz" target="_blank" class="link-button github-link">See the code</a>
+			</div>
+			<div class="project-text">
+				<h4>jsquiz</h4>
+				<p>A simple, responsive quiz website that uses javascript to get user input, check their answers, and display the results.</p>
+			</div>
+		</div>
+
 		<div class="project-pane">
 			<div class="project-image brickbreaker">
 				<a href="https://github.com/GramBam/Epileptic-Brickbreaker/blob/master/brickbreak.html" target="_blank" class="link-button github-link">See the code</a>
 			</div>
 			<div class="project-text">
 				<h4>Epileptic Brickbreaker</h4>
-				<p>My first game, done all in javascript. I would not recommend checking this out at all.</p>
+				<p>My first game, done all in javascript. This project made me realize how difficult programming physics is. For safety reasons I would not recommend playing this for more than 30 seconds.</p>
 			</div>
 		</div>
 
@@ -112,6 +137,22 @@
 	</div>
 </div>
 
-	</section>
+<div class="project-pane">
+	<div class="project-image portfolio">
+		<a href="https://github.com/GramBam/portfolio" target="_blank" class="link-button github-link">See the code</a>
+	</div>
+	<div class="project-text">
+		<h4>Portfolio (This Site)</h4>
+		<p>Building this portfolio site was a lot harder than a lot of my freelance projects. I'm definately pleased with it, though I'd like to come back and improve on it when my skills have further developed.</p>
+		</div>
+	 </div>
+ </section>
+</main>
+
+	<footer>
+	<p>Copyright &copy;2017 Graham Moss. All rights reserved.</p>
+	</footer>
+
+
 </body>
 </html>

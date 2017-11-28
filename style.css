@@ -1,23 +1,28 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 html {
-  font-size: 14px; }
+  font-size: 14px;
+}
 
 body {
   min-height: 100vh;
   font-family: sans-serif;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+}
 
 
 a,
 button {
-  color: inherit; }
+  color: inherit;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 button {
   overflow: visible;
@@ -26,13 +31,16 @@ button {
   -webkit-font-smoothing: inherit;
   letter-spacing: inherit;
   background: none;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 strong {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 *::selection {
-  background: rgba(194, 208, 118, 0.6); }
+  background: rgba(194, 208, 118, 0.6);
+}
 
 html {
   background-color: #161C26;
@@ -49,32 +57,39 @@ html {
       font-size: 13px; } }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 h1, h2 {
   font: 2.5rem "Julius Sans One";
   color: #222;
   text-transform: lowercase;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+}
   @media screen and (max-width: 350px) {
     h1, h2 {
-      font-size: 2.2rem; } }
+      font-size: 2.2rem;
+    } }
 
 h1 {
-  padding: 1rem 0 0 1rem; }
+  padding: 1rem 0 0 1rem;
+}
 
 p {
   font: 1.3rem "Quicksand";
-  line-height: 1.5; }
+  line-height: 1.5;
+}
 
 footer {
   background-color: #161C26;
-  height: 50px; }
+  height: 50px;
+}
   footer p {
     font: 0.8rem "Nixie One";
     color: #eee;
     text-align: center;
-    line-height: 50px; }
+    line-height: 50px;
+  }
 
 header {
   position: absolute;
@@ -82,14 +97,22 @@ header {
   left: 0;
   width: 100%;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+}
+
+.icons {
+  position: absolute;
+  left: 90%;
+  top: 7%
+  }
 
 navbar {
   position: relative;
   align-self: center;
   display: flex;
   justify-content: center;
-  margin: 20vh auto 0; }
+  margin: 20vh auto 0;
+}
   @media screen and (min-width: 851px) {
     html:not(.is-touch) navbar:before, html:not(.is-touch) navbar:after {
       content: "";
@@ -147,14 +170,15 @@ navbar {
 #sect {
   height: 170vh;
   width: 100vw;
-  background: url("images/background2.jpg") 70% 0%/cover no-repeat;
+  background: url("images/background3.jpeg") 70% 0%/cover no-repeat;
 }
 
 
 #about {
   display: flex;
   position: relative;
-  margin-top: -70vh; }
+  margin-top: -70vh;
+}
   @media screen and (max-width: 950px) {
     #about {
       flex-direction: column; } }
@@ -179,11 +203,13 @@ navbar {
   flex: 8;
   display: flex;
   flex-direction: column;
-  padding: 1rem; }
+  padding: 1rem;
+}
   .tools p {
-    color: #222;
+    color: #eee;
     text-align: center;
-     }
+    font-size: 2.5rem
+    }
   @media screen and (max-width: 950px) {
     .tools {
       flex: 0;
@@ -197,7 +223,8 @@ navbar {
 .icon-grid {
   display: flex;
   flex-wrap: wrap;
-  overflow: hidden; }
+  overflow: hidden;
+}
   @media screen and (min-width: 1201px) {
     .icon-grid {
       padding: 2rem 10%; } }
@@ -214,23 +241,27 @@ navbar {
 
 .box-outer {
   position: relative;
-  width: 33.33333%; }
+  width: 33.33333%;
+}
 
 .box-outer:before {
   content: "";
   display: block;
-  padding-top: 100%; }
+  padding-top: 100%;
+}
 
 .box-inner {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0; }
+  left: 0;
+}
   .box-inner img {
     width: 60%;
     height: 60%;
-    margin: 20%; }
+    margin: 20%;
+  }
   .box-inner h6 {
     position: absolute;
     display: block;
@@ -239,16 +270,19 @@ navbar {
     width: 200%;
     font: 1.3rem "Quicksand";
     text-align: center;
-    color: rgba(238, 238, 238, 0.7); }
+    color: rgba(238, 238, 238, 0.7);
+  }
 
     #projects {
   display: flex;
   flex-direction: column;
   background-color: #161C26;
-  padding: 2rem; }
+  padding: 2rem;
+}
   #projects h2 {
     color: #eee;
-    margin-bottom: 5rem; }
+    margin-bottom: 5rem;
+  }
   @media screen and (max-width: 900px) {
     #projects {
       padding: 1rem; }
@@ -260,7 +294,8 @@ navbar {
   height: 400px;
   max-width: 1500px;
   margin: 0 auto 5rem;
-  border: 2px solid rgba(238, 238, 238, 0.2); }
+  border: 2px solid rgba(238, 238, 238, 0.2);
+}
   @media screen and (max-width: 900px) {
     .project-pane {
       flex-direction: column;
@@ -280,7 +315,8 @@ navbar {
   order: 1;
   flex: 1;
   padding: 0 2rem;
-  position: relative; }
+  position: relative;
+}
   @media screen and (min-width: 901px) {
     .project-image .project-link, .project-image .github-link {
       right: -2rem;
@@ -315,20 +351,23 @@ navbar {
       left: 50%;
       right: initial;
       transform: translateX(-50%);
-      background: #161C26; } }
+      background: #161C26; }
+    }
 
 .project-link {
   bottom: 0; }
   @media screen and (max-width: 900px) {
     .project-link {
-      bottom: -.5rem; } }
+      bottom: -.5rem; }
+    }
 
 .github-link {
   position: absolute;
   bottom: 4rem; }
   @media screen and (max-width: 900px) {
     .github-link {
-      bottom: 3rem; } }
+      bottom: 3rem; }
+    }
 
 .project-text {
   order: 2;
@@ -345,7 +384,8 @@ navbar {
     text-align: center;
     font-weight: bold;
     border-left: 1px solid #eee;
-    border-right: 1px solid #eee; }
+    border-right: 1px solid #eee;
+  }
   .project-text p {
     padding: 1rem;
     font-size: 1.25rem;
@@ -363,4 +403,12 @@ navbar {
 
 .stremlerresearch {
   background: url("images/stremlerresearch.png") 50% 50%/cover no-repeat; }
-}
+
+.portfolio {
+  background: url("images/portfolio.png") 20% 20%/cover no-repeat; }
+
+.wealthtable {
+  background: url("http://lorempixel.com/600/400") 50% 50%/cover no-repeat; }
+
+.jsquiz {
+  background: url("images/jsquiz.jpg") 20% 20%/cover no-repeat; }
