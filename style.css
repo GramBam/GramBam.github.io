@@ -106,11 +106,19 @@ header {
   top: 7%
   }
 
+  @media screen and (max-width: 665px) {
+    .icons {
+    left: 45%;
+    top: 45%; }
+  }
+
+
   @media screen and (max-width: 500px) {
     .icons {
-    left: 40%;
+    left: 45%;
     top: 25%; }
   }
+
 
 navbar {
   position: relative;
@@ -414,7 +422,7 @@ navbar {
   background: url("images/portfolio.jpg") 20% 20%/cover no-repeat; }
 
 .wealthtable {
-  background: url("http://lorempixel.com/600/400") 50% 50%/cover no-repeat; }
+  background: url("images/WealthTable.jpg") 10% 10%/cover no-repeat; }
 
 .jsquiz {
   background: url("images/jsquiz.jpg") 20% 20%/cover no-repeat; }
