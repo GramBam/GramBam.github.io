@@ -427,6 +427,9 @@ navbar {
 .jsquiz {
   background: url("images/jsquiz.jpg") 20% 20%/cover no-repeat; }
 
+  .ror {
+  background: url("images/RoR.jpg") 20% 20%/cover no-repeat; }
+
   #contact {
   background: #eee;
   display: flex;
