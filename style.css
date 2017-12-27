@@ -115,8 +115,8 @@ header {
 
   @media screen and (max-width: 500px) {
     .icons {
-    left: 45%;
-    top: 25%; }
+    left: 42%;
+    top: 27%; }
   }
 
 
@@ -361,6 +361,7 @@ navbar {
     border: 1px solid rgba(238, 238, 238, 0.9); }
   @media screen and (max-width: 900px) {
     .link-button {
+      padding: .4rem .7rem;
       margin: 0;
       left: 50%;
       right: initial;
@@ -380,7 +381,7 @@ navbar {
   bottom: 4rem; }
   @media screen and (max-width: 900px) {
     .github-link {
-      bottom: 4rem; }
+      bottom: 2rem; }
     }
 
 .project-text {
