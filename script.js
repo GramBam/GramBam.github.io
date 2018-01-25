@@ -5,3 +5,16 @@ $("navbar a").click(function(){
 	}, 500);
 	return false;
 });
+
+const pressed = [];
+const secretCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a']
+
+window.addEventListener('keyup', (e) => {
+  console.log(e.key);
+  pressed.push(e.key);
+  pressed.splice(-secretCode.length -1, pressed.length - secretCode.length);
+  if(pressed.join('').includes(secretCode)){
+    console.log('yay');
+    cornify_add();
+  }
+});
