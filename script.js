@@ -1,3 +1,5 @@
+// Smooth Scroll
+
 $("navbar a").click(function(){
 	var href = $.attr(this, "href");
 	$("html, body").animate({
@@ -5,6 +7,8 @@ $("navbar a").click(function(){
 	}, 500);
 	return false;
 });
+
+// Konami Code
 
 const pressed = [];
 const secretCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a']
@@ -16,4 +20,10 @@ window.addEventListener('keyup', (e) => {
   if(pressed.join('').includes(secretCode)){
     cornify_add();
   }
+});
+
+// WealthTable SlideShow
+
+$(document).ready(function() {
+	setInterval(function(){$('.project-image.wealthtable').toggleClass('wealthtable2')}, 3000);
 });
