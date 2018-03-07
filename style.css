@@ -325,6 +325,14 @@ navbar {
     .project-pane:nth-child(even) .project-text {
       text-align: right; } }
 
+      @media screen and (min-width: 901px) {
+        .project-pane:nth-child(even) .project-image-wt {
+          order: 3; } }
+      @media screen and (min-width: 901px) and (min-width: 901px) {
+        .project-pane:nth-child(even) .project-image-wt .project-link, .project-pane:nth-child(even) .project-image-wt .github-link {
+          left: -2rem;
+          right: initial; } }
+
 .project-image {
   order: 1;
   flex: 1;
@@ -344,6 +352,27 @@ navbar {
       min-height: 250px; } }
   @media screen and (max-width: 450px) {
     .project-image {
+      min-height: 200px; } }
+
+.project-image-wt {
+  order: 1;
+  flex: 1;
+  padding: 0 2rem;
+  position: relative;
+}
+  @media screen and (min-width: 901px) {
+    .project-image-wt .project-link, .project-image-wt .github-link {
+      right: -2rem;
+      left: initial; } }
+  @media screen and (max-width: 900px) {
+    .project-image-wt {
+      flex: none;
+      min-height: 350px; } }
+  @media screen and (max-width: 720px) {
+    .project-image-wt {
+      min-height: 250px; } }
+  @media screen and (max-width: 450px) {
+    .project-image-wt {
       min-height: 200px; } }
 
 .link-button {

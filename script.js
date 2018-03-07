@@ -28,5 +28,5 @@ const classes = ["wt1", "wt2", "wt3"];
 let index = 0;
 
 setInterval(function() {
-  $(".project-image").removeClass(classes[index++ % 3]).addClass(classes[index % 3]);
+  $(".project-image-wt").removeClass(classes[index++ % 3]).addClass(classes[index % 3]);
 }, 4000);
