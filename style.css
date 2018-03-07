@@ -434,11 +434,14 @@ navbar {
 .portfolio {
   background: url("images/portfolio.jpg") 20% 20%/cover no-repeat; }
 
-.wealthtable {
-  background: url("images/WealthTable.jpg") 5% 5%/cover no-repeat; }
+.wt1 {
+  background: url("images/wt1.jpg") 5% 5%/cover no-repeat; }
 
-.wealthtable2 {
-  background: url("images/WealthTable2.jpg") 5% 5%/cover no-repeat; }
+.wt2 {
+  background: url("images/wt2.jpg") 5% 5%/cover no-repeat; }
+
+.wt3 {
+  background: url("images/wt3.jpg") 5% 5%/cover no-repeat; }
 
 .jsquiz {
   background: url("images/jsquiz.jpg") 20% 20%/cover no-repeat; }
