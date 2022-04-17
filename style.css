@@ -45,31 +45,46 @@ strong {
 html {
   background-color: #161C26;
   background: linear-gradient(to top, #eee, #161C26 10%, #161C26);
-  font-size: 18px; }
-  @media screen and (max-width: 1400px) {
-    html {
-      font-size: 16px; } }
-  @media screen and (max-width: 1000px) {
-    html {
-      font-size: 15px; } }
-  @media screen and (max-width: 500px) {
-    html {
-      font-size: 13px; } }
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1400px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 13px;
+  }
+}
 
 body {
   overflow-x: hidden;
 }
 
-h1, h2 {
+h1,
+h2 {
   font: 2.5rem "Julius Sans One";
   color: #222;
   text-transform: lowercase;
   margin-bottom: 3rem;
 }
-  @media screen and (max-width: 350px) {
-    h1, h2 {
-      font-size: 2.2rem;
-    } }
+
+@media screen and (max-width: 350px) {
+
+  h1,
+  h2 {
+    font-size: 2.2rem;
+  }
+}
 
 h1 {
   padding: 1rem 0 0 1rem;
@@ -84,12 +99,13 @@ footer {
   background-color: #161C26;
   height: 50px;
 }
-  footer p {
-    font: 0.8rem "Nixie One";
-    color: #eee;
-    text-align: center;
-    line-height: 50px;
-  }
+
+footer p {
+  font: 0.8rem "Nixie One";
+  color: #eee;
+  text-align: center;
+  line-height: 50px;
+}
 
 header {
   position: absolute;
@@ -104,20 +120,22 @@ header {
   position: absolute;
   left: 90%;
   top: 7%
-  }
+}
 
-  @media screen and (max-width: 665px) {
-    .icons {
+@media screen and (max-width: 665px) {
+  .icons {
     left: 45%;
-    top: 45%; }
+    top: 45%;
   }
+}
 
 
-  @media screen and (max-width: 500px) {
-    .icons {
+@media screen and (max-width: 500px) {
+  .icons {
     left: 42%;
-    top: 27%; }
+    top: 18%;
   }
+}
 
 
 navbar {
@@ -127,59 +145,89 @@ navbar {
   justify-content: center;
   margin: 20vh auto 0;
 }
-  @media screen and (min-width: 851px) {
-    html:not(.is-touch) navbar:before, html:not(.is-touch) navbar:after {
-      content: "";
-      display: block;
-      position: absolute;
-      left: 0;
-      width: 100%;
-      border-bottom: 1px solid #222;
-      transform: scaleX(0);
-      transition: transform 0.5s;
-      will-change: transform; }
-    html:not(.is-touch) navbar:before {
-      top: 0;
-      transform-origin: 105% 0%; }
-    html:not(.is-touch) navbar:after {
-      bottom: 0;
-      transform-origin: -5% 0%; }
-    html:not(.is-touch) navbar:hover:before, html:not(.is-touch) navbar:hover:after {
-      transform: scaleX(1); } }
-  @media screen and (max-width: 850px) {
-    navbar {
-      border-top: 1px solid #222;
-      border-bottom: 1px solid #222; } }
-  @media screen and (max-width: 500px) {
-    navbar {
-      flex-direction: column;
-      border: 1px solid #222;
-      margin-top: 5vh;
-      background: rgba(238, 238, 238, 0.55); } }
-  navbar h3 {
-    height: 0;
-    text-indent: -10000px; }
+
+@media screen and (min-width: 851px) {
+
+  html:not(.is-touch) navbar:before,
+  html:not(.is-touch) navbar:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #222;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+    will-change: transform;
+  }
+
+  html:not(.is-touch) navbar:before {
+    top: 0;
+    transform-origin: 105% 0%;
+  }
+
+  html:not(.is-touch) navbar:after {
+    bottom: 0;
+    transform-origin: -5% 0%;
+  }
+
+  html:not(.is-touch) navbar:hover:before,
+  html:not(.is-touch) navbar:hover:after {
+    transform: scaleX(1);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  navbar {
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  navbar {
+    flex-direction: column;
+    border: 1px solid #222;
+    margin-top: 5vh;
+    background: rgba(238, 238, 238, 0.55);
+  }
+}
+
+navbar h3 {
+  height: 0;
+  text-indent: -10000px;
+}
+
+navbar a {
+  padding: 1rem;
+  margin: 1.2rem 1rem;
+  font: 1.6rem "Nixie One";
+  text-transform: lowercase;
+  color: #222;
+  border: 1px solid transparent;
+  transition: .1s;
+  text-shadow: 0px 0px 6px rgba(214, 214, 214, 0.5), 0px 0px 1px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 851px) {
+  html:not(.is-touch) navbar a:hover {
+    border-left: 1px solid #222;
+    border-right: 1px solid #222;
+  }
+}
+
+@media screen and (max-width: 500px) {
   navbar a {
-    padding: 1rem;
-    margin: 1.2rem 1rem;
-    font: 1.6rem "Nixie One";
-    text-transform: lowercase;
-    color: #222;
-    border: 1px solid transparent;
-    transition: .1s;
-    text-shadow: 0px 0px 6px rgba(214, 214, 214, 0.5), 0px 0px 1px rgba(0, 0, 0, 0.5); }
-    @media screen and (min-width: 851px) {
-      html:not(.is-touch) navbar a:hover {
-        border-left: 1px solid #222;
-        border-right: 1px solid #222; } }
-    @media screen and (max-width: 500px) {
-      navbar a {
-        margin: 0 1rem;
-        padding: 2rem 1.5rem;
-        text-align: center;
-        border-bottom: 1px solid #222; }
-        navbar a:last-of-type {
-          border-bottom: none; } }
+    margin: 0 1rem;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid #222;
+  }
+
+  navbar a:last-of-type {
+    border-bottom: none;
+  }
+}
 
 #sect {
   height: 170vh;
@@ -193,25 +241,36 @@ navbar {
   position: relative;
   margin-top: -70vh;
 }
-  @media screen and (max-width: 950px) {
-    #about {
-      flex-direction: column; } }
+
+@media screen and (max-width: 950px) {
+  #about {
+    flex-direction: column;
+  }
+}
 
 .about-text {
   flex: 13;
   background-color: #eee;
-  padding: 2rem; }
-  .about-text p {
-    color: #222;
-    line-height: 1.7;
-    max-width: 800px;
-    margin: 0 auto 2rem; }
-    .about-text p:last-of-type {
-      margin-bottom: 1rem; }
-  @media screen and (max-width: 950px) {
-    .about-text {
-      flex: 0;
-      padding-bottom: 4rem; } }
+  padding: 2rem;
+}
+
+.about-text p {
+  color: #222;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.about-text p:last-of-type {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 950px) {
+  .about-text {
+    flex: 0;
+    padding-bottom: 4rem;
+  }
+}
 
 .tools {
   flex: 8;
@@ -219,39 +278,58 @@ navbar {
   flex-direction: column;
   padding: 1rem;
 }
-  .tools p {
-    color: #eee;
-    text-align: center;
-    font-size: 2.5rem
-    }
-  @media screen and (max-width: 950px) {
-    .tools {
-      flex: 0;
-      background: #161C26;
-      border-bottom: 2px solid rgba(238, 238, 238, 0.6);
-      padding: 2rem; } }
-  @media screen and (max-width: 500px) {
-    .tools {
-      padding: 1rem; } }
+
+.tools p {
+  color: #eee;
+  text-align: center;
+  font-size: 2.5rem
+}
+
+@media screen and (max-width: 950px) {
+  .tools {
+    flex: 0;
+    background: #161C26;
+    border-bottom: 2px solid rgba(238, 238, 238, 0.6);
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tools {
+    padding: 1rem;
+  }
+}
 
 .icon-grid {
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
 }
-  @media screen and (min-width: 1201px) {
-    .icon-grid {
-      padding: 2rem 10%; } }
-  @media screen and (max-width: 950px) {
-    .icon-grid {
-      padding: 2rem 24%; } }
-  @media screen and (max-width: 800px) {
-    .icon-grid {
-      padding: 2rem 15%; } }
-  @media screen and (max-width: 500px) {
-    .icon-grid {
-      padding: 1rem 5%;
-      margin-bottom: 2rem; } }
+
+@media screen and (min-width: 1201px) {
+  .icon-grid {
+    padding: 2rem 10%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .icon-grid {
+    padding: 2rem 24%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .icon-grid {
+    padding: 2rem 15%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .icon-grid {
+    padding: 1rem 5%;
+    margin-bottom: 2rem;
+  }
+}
 
 .box-outer {
   position: relative;
@@ -271,37 +349,45 @@ navbar {
   bottom: 0;
   left: 0;
 }
-  .box-inner img {
-    width: 60%;
-    height: 60%;
-    margin: 20%;
-  }
-  .box-inner h6 {
-    position: absolute;
-    display: block;
-    bottom: 0;
-    left: -50%;
-    width: 200%;
-    font: 1.3rem "Quicksand";
-    text-align: center;
-    color: rgba(238, 238, 238, 0.7);
-  }
 
-    #projects {
+.box-inner img {
+  width: 60%;
+  height: 60%;
+  margin: 20%;
+}
+
+.box-inner h6 {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: -50%;
+  width: 200%;
+  font: 1.3rem "Quicksand";
+  text-align: center;
+  color: rgba(238, 238, 238, 0.7);
+}
+
+#projects {
   display: flex;
   flex-direction: column;
   background-color: #161C26;
   padding: 2rem;
 }
-  #projects h2 {
-    color: #eee;
-    margin-bottom: 5rem;
+
+#projects h2 {
+  color: #eee;
+  margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 900px) {
+  #projects {
+    padding: 1rem;
   }
-  @media screen and (max-width: 900px) {
-    #projects {
-      padding: 1rem; }
-      #projects h2 {
-        padding: 1rem 0 0 1rem; } }
+
+  #projects h2 {
+    padding: 1rem 0 0 1rem;
+  }
+}
 
 .project-pane {
   display: flex;
@@ -310,28 +396,49 @@ navbar {
   margin: 0 auto 5rem;
   border: 2px solid rgba(238, 238, 238, 0.2);
 }
-  @media screen and (max-width: 900px) {
-    .project-pane {
-      flex-direction: column;
-      height: auto; } }
-  @media screen and (min-width: 901px) {
-    .project-pane:nth-child(even) .project-image {
-      order: 3; } }
-  @media screen and (min-width: 901px) and (min-width: 901px) {
-    .project-pane:nth-child(even) .project-image .project-link, .project-pane:nth-child(even) .project-image .github-link {
-      left: -2rem;
-      right: initial; } }
-  @media screen and (min-width: 901px) {proj-img-1
-    .project-pane:nth-child(even) .project-text {
-      text-align: right; } }
 
-      @media screen and (min-width: 901px) {
-        .project-pane:nth-child(even) .project-image-wt {
-          order: 3; } }
-      @media screen and (min-width: 901px) and (min-width: 901px) {
-        .project-pane:nth-child(even) .project-image-wt .project-link, .project-pane:nth-child(even) .project-image-wt .github-link {
-          left: -2rem;
-          right: initial; } }
+@media screen and (max-width: 900px) {
+  .project-pane {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .project-pane:nth-child(even) .project-image {
+    order: 3;
+  }
+}
+
+@media screen and (min-width: 901px) and (min-width: 901px) {
+
+  .project-pane:nth-child(even) .project-image .project-link,
+  .project-pane:nth-child(even) .project-image .github-link {
+    left: -2rem;
+    right: initial;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  proj-img-1 .project-pane:nth-child(even) .project-text {
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .project-pane:nth-child(even) .project-image-wt {
+    order: 3;
+  }
+}
+
+@media screen and (min-width: 901px) and (min-width: 901px) {
+
+  .project-pane:nth-child(even) .project-image-wt .project-link,
+  .project-pane:nth-child(even) .project-image-wt .github-link {
+    left: -2rem;
+    right: initial;
+  }
+}
 
 .project-image {
   order: 1;
@@ -339,20 +446,34 @@ navbar {
   padding: 0 2rem;
   position: relative;
 }
-  @media screen and (min-width: 901px) {
-    .project-image .project-link, .project-image .github-link {
-      right: -2rem;
-      left: initial; } }
-  @media screen and (max-width: 900px) {
-    .project-image {
-      flex: none;
-      min-height: 350px; } }
-  @media screen and (max-width: 720px) {
-    .project-image {
-      min-height: 250px; } }
-  @media screen and (max-width: 450px) {
-    .project-image {
-      min-height: 200px; } }
+
+@media screen and (min-width: 901px) {
+
+  .project-image .project-link,
+  .project-image .github-link {
+    right: -2rem;
+    left: initial;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .project-image {
+    flex: none;
+    min-height: 350px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .project-image {
+    min-height: 250px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .project-image {
+    min-height: 200px;
+  }
+}
 
 .project-image-wt {
   order: 1;
@@ -360,20 +481,34 @@ navbar {
   padding: 0 2rem;
   position: relative;
 }
-  @media screen and (min-width: 901px) {
-    .project-image-wt .project-link, .project-image-wt .github-link {
-      right: -2rem;
-      left: initial; } }
-  @media screen and (max-width: 900px) {
-    .project-image-wt {
-      flex: none;
-      min-height: 350px; } }
-  @media screen and (max-width: 720px) {
-    .project-image-wt {
-      min-height: 250px; } }
-  @media screen and (max-width: 450px) {
-    .project-image-wt {
-      min-height: 200px; } }
+
+@media screen and (min-width: 901px) {
+
+  .project-image-wt .project-link,
+  .project-image-wt .github-link {
+    right: -2rem;
+    left: initial;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .project-image-wt {
+    flex: none;
+    min-height: 350px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .project-image-wt {
+    min-height: 250px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .project-image-wt {
+    min-height: 200px;
+  }
+}
 
 .link-button {
   position: absolute;
@@ -384,199 +519,280 @@ navbar {
   color: #eee;
   font: 1.4rem "Nixie One";
   text-transform: lowercase;
-  transition: .2s; }
-  html:not(.is-touch) .link-button:hover {
+  transition: .2s;
+}
+
+html:not(.is-touch) .link-button:hover {
+  background: #161C26;
+  border: 1px solid rgba(238, 238, 238, 0.9);
+}
+
+@media screen and (max-width: 900px) {
+  .link-button {
+    padding: .4rem .7rem;
+    margin: 0;
+    left: 50%;
+    right: initial;
+    transform: translateX(-50%);
     background: #161C26;
-    border: 1px solid rgba(238, 238, 238, 0.9); }
-  @media screen and (max-width: 900px) {
-    .link-button {
-      padding: .4rem .7rem;
-      margin: 0;
-      left: 50%;
-      right: initial;
-      transform: translateX(-50%);
-      background: #161C26; }
-    }
+  }
+}
 
 .project-link {
-  bottom: 0; }
-  @media screen and (max-width: 900px) {
-    .project-link {
-      bottom: -.5rem; }
-    }
+  bottom: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .project-link {
+    bottom: -.5rem;
+  }
+}
 
 .github-link {
   position: absolute;
-  bottom: 4rem; }
-  @media screen and (max-width: 900px) {
-    .github-link {
-      bottom: 2rem; }
-    }
+  bottom: 4rem;
+}
+
+@media screen and (max-width: 900px) {
+  .github-link {
+    bottom: 2rem;
+  }
+}
 
 .project-text {
   order: 2;
   flex: 1;
   margin: auto 0;
   padding: 0 2rem 1rem;
-  color: #eee; }
+  color: #eee;
+}
+
+.project-text h4 {
+  display: inline-block;
+  padding: 1rem;
+  margin: 0 1rem 2rem;
+  font: 1.5rem "Nixie One";
+  text-transform: lowercase;
+  text-align: center;
+  font-weight: bold;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+
+.project-text p {
+  padding: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+
+@media screen and (max-width: 900px) {
+  .project-text {
+    padding: 0 1rem 1rem;
+    flex: none;
+  }
+
   .project-text h4 {
-    display: inline-block;
-    padding: 1rem;
-    margin: 0 1rem 2rem;
-    font: 1.5rem "Nixie One";
-    text-transform: lowercase;
-    text-align: center;
-    font-weight: bold;
-    border-left: 1px solid #eee;
-    border-right: 1px solid #eee;
+    display: table;
+    margin: 2rem auto;
   }
+}
+
+@media screen and (max-width: 1126px) {
   .project-text p {
-    padding: 1rem;
-    font-size: 1.25rem;
-    line-height: 1.7; }
-  @media screen and (max-width: 900px) {
-    .project-text {
-      padding: 0 1rem 1rem;
-      flex: none; }
-      .project-text h4 {
-        display: table;
-        margin: 2rem auto; } }
-
-  @media screen and (max-width: 1126px) {
-    .project-text p {
-      line-height: 1.6;
-    }
+    line-height: 1.6;
   }
+}
 
-  @media screen and (min-width: 1001px) and (max-width: 1036px) {
-    .project-text p {
-      line-height: 1.5;
-    }
+@media screen and (min-width: 1001px) and (max-width: 1036px) {
+  .project-text p {
+    line-height: 1.5;
   }
+}
 
 .cryptoticker {
-  background: url("images/cryptoticker.jpg") 50% 50%/cover no-repeat; }
+  background: url("images/cryptoticker.jpg") 50% 50%/cover no-repeat;
+}
 
 .stremlerresearch {
-  background: url("images/stremlerresearch.png") 50% 50%/cover no-repeat; }
+  background: url("images/stremlerresearch.png") 50% 50%/cover no-repeat;
+}
 
 .portfolio {
-  background: url("images/portfolio.jpg") 20% 20%/cover no-repeat; }
+  background: url("images/portfolio.jpg") 20% 20%/cover no-repeat;
+}
 
 .wt1 {
-  background: url("images/wt1.jpg") 5% 5%/cover no-repeat; }
+  background: url("images/wt1.jpg") 5% 5%/cover no-repeat;
+}
 
 .wt2 {
-  background: url("images/wt2.jpg") 5% 5%/cover no-repeat; }
+  background: url("images/wt2.jpg") 5% 5%/cover no-repeat;
+}
 
 .wt3 {
-  background: url("images/wt3.jpg") 5% 5%/cover no-repeat; }
+  background: url("images/wt3.jpg") 5% 5%/cover no-repeat;
+}
 
 .twitterbot {
-  background: url("images/twitterbot.jpg") 5% 5%/cover no-repeat; }
+  background: url("images/twitterbot.jpg") 5% 5%/cover no-repeat;
+}
 
 .ror {
-  background: url("images/RoR.jpg") 1% 1%/cover no-repeat; }
+  background: url("images/RoR.jpg") 1% 1%/cover no-repeat;
+}
 
 .flexboxer {
-    background: url("images/flexboxer.jpg") 20% 20%/cover no-repeat; }
+  background: url("images/flexboxer.jpg") 20% 20%/cover no-repeat;
+}
 
-  #contact {
+#contact {
   background: #eee;
   display: flex;
   flex-direction: column;
-  padding: 2rem; }
-  @media screen and (max-width: 500px) {
-    #contact {
-      padding: 1rem; }
-      #contact h2 {
-        padding: 1rem 0 0 1rem; } }
+  padding: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  #contact {
+    padding: 1rem;
+  }
+
+  #contact h2 {
+    padding: 1rem 0 0 1rem;
+  }
+}
 
 .contact-wrapper {
   display: flex;
-  margin-bottom: 6.3rem; }
-  @media screen and (max-width: 1000px) {
-    .contact-wrapper {
-      flex-direction: column; }
-      .contact-wrapper form {
-        border-right: none;
-        position: relative; }
-        .contact-wrapper form:after {
-          content: "";
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          margin: 0 3rem;
-          border-bottom: 1px solid #161C26; } }
+  margin-bottom: 6.3rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-wrapper form {
+    border-right: none;
+    position: relative;
+  }
+
+  .contact-wrapper form:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 3rem;
+    border-bottom: 1px solid #161C26;
+  }
+}
 
 form.contact-form {
   flex: 13;
-  border-right: 1px solid #161C26; }
-  @media screen and (max-width: 1000px) {
-    form.contact-form {
-      border-right: none;
-      flex: none; } }
+  border-right: 1px solid #161C26;
+}
+
+@media screen and (max-width: 1000px) {
+  form.contact-form {
+    border-right: none;
+    flex: none;
+  }
+}
+
+form.contact-form div {
+  text-align: right;
+  margin: 0 1rem 1rem 0;
+  display: flex;
+}
+
+form.contact-form div:first-of-type {
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
   form.contact-form div {
-    text-align: right;
-    margin: 0 1rem 1rem 0;
-    display: flex; }
-    form.contact-form div:first-of-type {
-      margin-top: 1rem; }
-    @media screen and (max-width: 1000px) {
-      form.contact-form div {
-        margin-right: 0; } }
-    @media screen and (max-width: 600px) {
-      form.contact-form div {
-        flex-direction: column; }
-        form.contact-form div label {
-          text-align: left; } }
-    form.contact-form div label {
-      flex: 1;
-      padding: 1rem;
-      background: #161C26;
-      color: #eee;
-      font: 1.4rem "Nixie One";
-      text-transform: lowercase;
-      font-weight: bold; }
-    form.contact-form div input, form.contact-form div textarea {
-      flex: 3;
-      padding: 1rem;
-      font: 1.3rem "Quicksand";
-      color: #161C26;
-      outline: none;
-      border: 1px solid rgba(22, 28, 38, 0.2);
-      border-left: 1px solid #161C26;
-      transition: .2s; }
-      @media screen and (max-width: 600px) {
-        form.contact-form div input, form.contact-form div textarea {
-          border-left: 1px solid transparent; } }
-      form.contact-form div input:focus, form.contact-form div textarea:focus {
-        border: 1px solid #161C26;
-        box-shadow: 0px 0px 2px rgba(22, 28, 38, 0.5); }
-    form.contact-form div textarea {
-      height: 18rem;
-      resize: none; }
-    form.contact-form div button {
-      align-self: center;
-      padding: 1rem 4rem;
-      margin: 1rem auto;
-      background: transparent;
-      color: #161C26;
-      font: 1.4rem "Nixie One";
-      text-transform: lowercase;
-      font-weight: bold;
-      border: 1px solid #161C26;
-      transition: .3s;
-      will-change: background-color, color; }
-      html:not(.is-touch) form.contact-form div button:hover {
-        background: #161C26;
-        color: #eee; }
-      @media screen and (max-width: 1000px) {
-        form.contact-form div button {
-          margin-bottom: 3rem;
-          background: #161C26;
-          color: #eee; } }
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  form.contact-form div {
+    flex-direction: column;
+  }
+
+  form.contact-form div label {
+    text-align: left;
+  }
+}
+
+form.contact-form div label {
+  flex: 1;
+  padding: 1rem;
+  background: #161C26;
+  color: #eee;
+  font: 1.4rem "Nixie One";
+  text-transform: lowercase;
+  font-weight: bold;
+}
+
+form.contact-form div input,
+form.contact-form div textarea {
+  flex: 3;
+  padding: 1rem;
+  font: 1.3rem "Quicksand";
+  color: #161C26;
+  outline: none;
+  border: 1px solid rgba(22, 28, 38, 0.2);
+  border-left: 1px solid #161C26;
+  transition: .2s;
+}
+
+@media screen and (max-width: 600px) {
+
+  form.contact-form div input,
+  form.contact-form div textarea {
+    border-left: 1px solid transparent;
+  }
+}
+
+form.contact-form div input:focus,
+form.contact-form div textarea:focus {
+  border: 1px solid #161C26;
+  box-shadow: 0px 0px 2px rgba(22, 28, 38, 0.5);
+}
+
+form.contact-form div textarea {
+  height: 18rem;
+  resize: none;
+}
+
+form.contact-form div button {
+  align-self: center;
+  padding: 1rem 4rem;
+  margin: 1rem auto;
+  background: transparent;
+  color: #161C26;
+  font: 1.4rem "Nixie One";
+  text-transform: lowercase;
+  font-weight: bold;
+  border: 1px solid #161C26;
+  transition: .3s;
+  will-change: background-color, color;
+}
+
+html:not(.is-touch) form.contact-form div button:hover {
+  background: #161C26;
+  color: #eee;
+}
+
+@media screen and (max-width: 1000px) {
+  form.contact-form div button {
+    margin-bottom: 3rem;
+    background: #161C26;
+    color: #eee;
+  }
+}
 
 .contact-aside {
   flex: 8;
@@ -584,43 +800,76 @@ form.contact-form {
   flex-direction: column;
   align-items: center;
   padding-left: 2rem;
-  margin-top: 1rem; }
-  @media screen and (max-width: 1000px) {
-    .contact-aside {
-      flex: none;
-      margin-top: 3rem;
-      padding-left: 0; } }
-  .contact-aside p {
-    color: #161C26;
-    font: 1.4rem "Nixie One";
-    text-transform: lowercase;
-    font-weight: bold;
-    padding: 1rem;
-    margin-bottom: 3rem;
-    border-left: 1px solid #161C26;
-    border-right: 1px solid #161C26; }
-  .contact-aside a {
-    display: inline-block;
-    color: #161C26;
-    font: 1.4rem "Quicksand";
-    padding: 1rem;
-    margin-bottom: 1rem;
-    position: relative; }
-    html:not(.is-touch) .contact-aside a:before, html:not(.is-touch) .contact-aside a:after {
-      content: "";
-      display: block;
-      position: absolute;
-      left: 0;
-      width: 100%;
-      border-bottom: 1px solid rgba(22, 28, 38, 0.4);
-      transform: scaleX(0);
-      transition: transform 0.3s;
-      will-change: transform; }
-    html:not(.is-touch) .contact-aside a:before {
-      top: 0;
-      transform-origin: 105% 0%; }
-    html:not(.is-touch) .contact-aside a:after {
-      bottom: 0;
-      transform-origin: -5% 0%; }
-    html:not(.is-touch) .contact-aside a:hover:before, html:not(.is-touch) .contact-aside a:hover:after {
-      transform: scaleX(1); }
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-aside {
+    flex: none;
+    margin-top: 3rem;
+    padding-left: 0;
+  }
+}
+
+.contact-aside p {
+  color: #161C26;
+  font: 1.4rem "Nixie One";
+  text-transform: lowercase;
+  font-weight: bold;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  border-left: 1px solid #161C26;
+  border-right: 1px solid #161C26;
+}
+
+.contact-aside a {
+  display: inline-block;
+  color: #161C26;
+  font: 1.4rem "Quicksand";
+  padding: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+html:not(.is-touch) .contact-aside a:before,
+html:not(.is-touch) .contact-aside a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(22, 28, 38, 0.4);
+  transform: scaleX(0);
+  transition: transform 0.3s;
+  will-change: transform;
+}
+
+html:not(.is-touch) .contact-aside a:before {
+  top: 0;
+  transform-origin: 105% 0%;
+}
+
+html:not(.is-touch) .contact-aside a:after {
+  bottom: 0;
+  transform-origin: -5% 0%;
+}
+
+html:not(.is-touch) .contact-aside a:hover:before,
+html:not(.is-touch) .contact-aside a:hover:after {
+  transform: scaleX(1);
+}
+
+.announcement {
+  margin-top: 50px;
+  align-self: center;
+  text-align: center;
+}
+
+.announcement p {
+  font-size: 38px;
+}
+
+.announcement a {
+  text-decoration: underline;
+  font-size: 38px;
+}
